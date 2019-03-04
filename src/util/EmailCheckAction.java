@@ -53,8 +53,8 @@ public class EmailCheckAction extends HttpServlet {
 		
 		try {
 			String host = "smtp.naver.com";
-			final String username = "dmdjqn21wb";
-			final String password = "fleamarket1!";
+			final String username = "youngho753";
+			final String password = "fleamarket!";
 			int port = 465;
 			
 			String subject = "Flea Market 회원가입 인증번호 확인 메일";
@@ -77,7 +77,7 @@ public class EmailCheckAction extends HttpServlet {
 			session.setDebug(true);
 			
 			Message mimeMessage = new MimeMessage(session);
-			mimeMessage.setFrom(new InternetAddress("dmdjqn21wb@naver.com"));
+			mimeMessage.setFrom(new InternetAddress("youngho753@naver.com"));
 			mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(email));
 			
 			mimeMessage.setSubject(subject);
