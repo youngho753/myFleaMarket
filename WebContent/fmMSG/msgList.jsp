@@ -41,7 +41,7 @@
 </c:forEach>
 </table>
 
-		<input type="button" value="쪽지쓰기" class="btn btn-default"  onclick="location.href='msgWrite.jsp'" >
+		<input type="button" value="쪽지쓰기" class="btn btn-default"  onclick="location.href='../fmMSG/msgWrite.jsp'" >
 </div>
 </body>
 </html>

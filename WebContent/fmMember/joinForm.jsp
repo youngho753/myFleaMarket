@@ -99,7 +99,7 @@ $(document).ready(function(){
         	return false;
         }
         if($("#phone").val()==""){
-        	alert("폰번호 입력하세요");
+        	alert("전화번호 입력하세요");
         	return false;
         }
         $("#frm").submit();

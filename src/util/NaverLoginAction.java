@@ -42,12 +42,12 @@ public class NaverLoginAction extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 
-		String clientId = "n5xLTOVp7Saleq411Wya";//애플리케이션 클라이언트 아이디값";
-	    String clientSecret = "2uWhk5pC26";//애플리케이션 클라이언트 시크릿값";
+		String clientId = "VfMEP3DuTDKW1yGcrao_";//애플리케이션 클라이언트 아이디값";
+	    String clientSecret = "5HO5lbm2AA";//애플리케이션 클라이언트 시크릿값";
 
 	    String code = request.getParameter("code");
 	    String state = request.getParameter("state");
-	    String redirectURI = URLEncoder.encode("http://localhost:8888/FleaMarket/fmMember/naver.do", "UTF-8");
+	    String redirectURI = URLEncoder.encode("http://localhost:8888/myFleaMarket/fmMember/naver.do", "UTF-8");
 	    String apiURL;
 	    apiURL = "https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&";
 	    apiURL += "client_id=" + clientId;
@@ -67,7 +67,7 @@ public class NaverLoginAction extends HttpServlet {
 	      System.out.print("responseCode="+responseCode);
 	      if(responseCode==200) {
 	        br = new BufferedReader(new InputStreamReader(con.getInputStream()));
-	      } else {  // �뿉�윭 諛쒖깮
+	      } else {  
 	        br = new BufferedReader(new InputStreamReader(con.getErrorStream()));
 	      }
 	      String inputLine;
